@@ -1,0 +1,327 @@
+
+/* .dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+} */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family:Optima;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edeae4;
+}
+
+/* header */
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #153147;
+    color: #153147;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:200;
+    min-height: auto;
+    
+}
+.logo{
+    font-size: 25px;
+    font-style: italic;
+    color: #edeae4;
+    font-weight: 600;
+}
+.nav {
+    background-color: #153147;
+}
+.nav-items a{
+    font-size: 18px;
+    color: #edeae4;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.nav-items a:hover,
+.nav-items a.active{
+    color: #adb8bb;
+}
+.nav-screen {
+    height: 100%;
+    z-index: 500;
+    position: fixed;
+    background-color: #153147;
+    opacity: 1;
+    right: -285px; /* start off behind the scenes */
+    -webkit-font-smoothing: antialiased;
+    position: fixed;
+    width: 285px;
+}
+.nav-screen .active {
+    display: block;
+}
+
+/* title screen */
+.home{
+    background-color: #153147;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    color: #153147;
+    line-height: 70px;
+}
+.home-content{
+    margin: auto;
+    background-color: #edeae4;
+    width: 50%;
+    text-align: center;
+}
+.home-content h1 {
+    font-size: 5.5rem;
+}
+
+/* about section */
+#about{
+    grid-template-columns: 1fr 1fr;
+    height:80vh;
+    align-items:center;
+    color:#f4efe6;
+    padding-left: 10%;
+    display: grid;
+
+}
+.about-content{
+    background-color: #5e6c5b;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: 70%;
+    height: auto;
+    padding: 10%;
+    text-align: center;
+    border-radius: 25px;
+}
+.about-content h1{
+    font-size: 3.5rem;
+}
+.about-content p {
+    font-size: 1rem;
+}
+.portrait{
+    padding-left: 15%;
+}
+.portrait img{
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+/* contact section */
+.contact-btns{
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    padding-top: auto;
+    background-color: #153147;
+}
+.contact-btns a:hover{
+    background-color: #153147;
+    color: #f4efe6;
+}
+.contact-btns a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background-color: #f4efe6;
+    border: 2px solid #f4efe6;
+    border-radius: 50%;
+    font-size: 30px;
+    color:#153147;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 10px;
+
+}
+
+#contact{
+    background-color: #5e6c5b;
+    grid-template-columns: 1fr 1fr;
+    height:80vh;
+    align-items:center;
+    padding-left: 10%;
+    display: grid;
+}
+.contact-content{
+    color:#edeae4;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding:10px;
+    font-size: 4rem;
+}
+
+/* contact form */
+.form-group {
+    margin-bottom: 15px;
+    padding-right: 30px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #edeae4;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-group button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #adb8bb;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.form-group button:hover {
+    background-color: #edeae4;
+    color: #153147;
+}
+.form-error {
+    color: red;
+}
+
+
+/* coursework */
+/* courses */
+#courses{
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    color: #f4efe6;
+    line-height: 70px;
+    display: grid;
+}
+#courses-content{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    margin: 80px;
+    padding: 15px;
+    background-color: #5e6c5b;
+    font-size: 3rem;
+    border-radius: 25px;
+}
+/* #courses h1{
+    font-size: 4rem;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 40px;
+} */
+
+/* table a {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 160px;
+    height: 25px;
+    background-color: #5e6c5b;
+    border-radius: 25px;
+    border-width: 1px solid #5e6c5b;
+    color: #edeae4;
+    text-align: center;
+} */
+
+.course-overview{
+    margin: 30px;
+    line-height: 35px;
+}
+.course-overview ul, ol{
+    margin-left: 60px;
+    font-size: 1.1rem;
+}
+.course-overview h1{
+    font-size: 3rem;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    line-height: normal;
+    color: #fefcf6;
+}
+.course-overview h3 {
+    font-size: 1.5rem;
+}
+.bold{
+    font-weight: bold;
+}
+#cs15, #cs200{
+    padding:40px;
+    background-color: #5e6c5b;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    color: #edeae4;
+}
+/* #courses-table{
+    border: 2px solid #232a2f;
+} */
+
+
+
+/* main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+} */
+/* 
+footer {
+    background-color: #232a2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+/* .blinking-cursor {
+    font-weight: 500;
+    margin-left: 4px;
+    font-size: 20px;
+    color: white !important;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  } */

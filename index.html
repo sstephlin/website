@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Home - Stephanie Lin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"> SJL</div>
+        <nav>
+            <div class="nav-items">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="coursework.html">Coursework</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </nav>
+        <div class="nav-screen">
+            <i class="fa fa-times fa-3x"></i>
+            <div class="nav-items">
+              <div class="nav-links">
+                <ul id='myMenu'>
+                  <li data-menuanchor="secondPage"><a href="about.html">About</a></li>
+                  <li data-menuanchor="thirdPage"><a href="coursework.html">Coursework</a></li>
+                  <li data-menuanchor="fourthPage"><a href="projects.html">Projects</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <p style="text-align: center;">Hello! I am</p>
+            <h1>Stephanie Lin</h1>
+            <p style="text-align: center;">Welcome to my website.</p>
+            <span class="dot"></span>
+            <!-- <p><span id="holder"></span><span class="blinking-cursor">|</span></p> -->
+        </div>
+        <!-- <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i> -->
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h1>About Me!</h1>
+            <p>Though born and raised in the Boston area, I currently attend school in Rhode Island 
+                at Brown University as a second year student concentrating in Mathematics and Computer Science. Outside of 
+            school, I enjoy dancing contemporary and Chinese classical styles. I also love hanging out with friends while trying 
+            new coffee shops.</p>
+        </div>
+        <div class="portrait">
+            <img src="portrait.JPG" width="40%" height="40%">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-content">
+            <h1>Contact Me!</h1>
+        </div>
+            <form action="/submit_contact_form" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <section class="contact-btns">
+        <a href="https://www.linkedin.com/in/stephanie-lin-1ab279314/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/sstephlin" target="_blank"><i class='bx bxl-github' ></i></a>
+        <a href="mailto:sstephlin112@gmail.com"><i class='bx bx-envelope'></i></a>
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

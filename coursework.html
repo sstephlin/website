@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Coursework - Stephanie Lin</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            line-height: normal;
+            align-items: start;
+            padding: 20px;
+            border-width: 20px;
+            margin-right: 20px;
+            color: #162a2c;
+            border: 3px;
+        }
+        th, td {
+            border: 1px solid #232a2f;
+            padding: 20px;
+            align-items: start;
+        }
+        a{
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        td{
+            font-size: 1.1rem;
+        }
+        a{
+            justify-content: center;
+        }
+        table a {
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            width: 180px;
+            height: 25px;
+            background-color: #5e6c5b;
+            border-radius: 25px;
+            border-width: 1px solid #5e6c5b;
+            color: #edeae4;
+            text-align: center;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"> SJL</div>
+        <nav>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="index.html">About</a>
+                <a href="index.html">Contact</a>
+                <a href="coursework.html"  class="active">Coursework</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </nav>
+        <!-- <div class="nav-screen">
+            <i class="fa fa-times fa-3x"></i>
+            <div class="nav-items">
+              <div class="nav-links">
+                <ul id='myMenu'>
+                  <li data-menuanchor="secondPage"><a href="about.html">About</a></li>
+                  <li data-menuanchor="thirdPage"><a href="coursework.html">Coursework</a></li>
+                  <li data-menuanchor="fourthPage"><a href="projects.html">Projects</a></li>
+                </ul>
+              </div>
+            </div>
+        </div> -->
+    </header>
+    <section id="courses">
+        <!-- <h1>Courses</h1> -->
+        <div id="courses-content">
+            <h1>Courses taken</h1>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Year</th>
+                    <th>Fall Semester</th>
+                    <th>Spring Semester</th>
+                </thead>
+                <tr>
+                    <th style="width: 10%;">2023-2024</th>
+                    <td>
+                        <ul>
+                            <li>Intro to Object Oriented Programming:<a href="#cs15">curriculum overview</a>
+                            </li>
+                            <li>Single Variable Calculus</li>
+                            <li>Intro to Sociology</li>
+                            <li>Principles of Economics</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Program Design with Data Structures and Algorithms:<a href="#cs200">curriculum overview</a>
+                            </li>
+                            <li>Introduction to Discrete Structures and Probability</li>
+                            <li>Linear Algebra</li>
+                            <li>Cognitive Neuroscience</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <th>2024-2025</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th>2025-2026</th>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th>2026-2027</th>
+                    <td> </td>
+                    <td> </td>
+                </tr> -->
+            </table>
+        </div>
+    </section>
+    <hr style="height: 5px; color: #232a2f;background-color: #232a2f; border: none;">
+    <section class="course-overview">
+        <div id="cs200">
+            <h1>Data Structures and Algorithms: Course Overview</h1>
+            <h3>
+                Completed Assignments:
+            </h3>
+            <ul>
+                <li>
+                    <span class="bold">HW1: an introduction to functional progamming: </span>
+                </li>
+                <ul>
+                    <li>
+                        <span class="bold">HW1A:</span> Understanding the basics of writing tests, working with records, and using maps and filters in Java. 
+                    </li>
+                    <li>
+                        <span class="bold">HW1B:</span> Learning recursive functions, annotating worst-case runtime, and implementing sorting algorithms.
+                    </li>
+                    <li>
+                        <span class="bold">HW1C:</span> practice with tree-like data structures, conversion of lists to tree-like data structures, runtime annotation, 
+                        and reasoning of design with tree-like data structures.
+                    </li>
+                </ul>
+                <li>
+                    <span class="bold">HW2 Understanding and Implementing Linked-Lists:</span> practiced implementing mutable lists, understood how lists
+                    work in memory, analyzed runtime practiced testing interacting mehtods, and added private fields to increase 
+                    performance speed. 
+                </li>
+                <li>
+                    <span class="bold">HW3 Implementing Hashtables:</span> practiced working with exceptions and curating a bredth of test-cases 
+                    by applying newly-introduced hashtables to real world settings. 
+                </li>
+                <li>
+                    <span class="bold">HW4 Introduction to Python:</span> wrote comprehensive test cases based on function specification in order 
+                    to debug existing code, learned list comprehension, applied Python sets, lists, and disctionaries, and used Python
+                    libraries to read command-line arguments and process files. 
+
+                </li>
+                <li>
+                    <span class="bold">HW5 Sharing Information History:</span> applied design and computation principles to a real-world situation under constrained
+                    resources, understood how to save and reload data, and used Python libraries to process files.  
+                </li>
+                <li>
+                    <span class="bold">HW6 Applications:</span> Solved 4 LeetCode-like problems under specific runtime constraints to apply data structures in 
+                    new contexts and strengthen understanding of runtime and space complexity. 
+                </li>
+            </ul>
+            <h3>Completed Projects</h3>
+            <ul>
+                <li>
+                    <span class="bold">Decision Tree:</span> implemented a machine learning algorithm using a tree-like structure and training data 
+                    to curate predictions. 
+                </li>
+                <li>
+                    <span class="bold">GraphQuest:</span> applied different data strucutres to check whether a route from one location to another
+                    exists, to compute routes between locations, and to determine the shortest route from a starting location to 
+                    a destination. Used both node based graphs and 2D-array based graphs. 
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div id="cs15">
+            <h1>Introduction to Object Oriented Programming: Course Overview</h1>
+            <h3>
+                Completed Assignments:
+            </h3>
+            <ul>
+                <li>
+                    <span class="bold">Rattytouille:</span> Understanding the basics of java, including compiling and 
+                    running code, print lines, and defining and calling methods. 
+                </li>
+                <li>
+                    <span class="bold">AndyBot:</span> Covers the concepts of reading JavaDocs, parameters, and nesting methods through navigating AndyBot through
+                    a fixed maze. 
+                </li>
+                <li>
+                    <span class="bold">Pong:</span> Coding A simple rendition of Pong to cover concepts of parameters, containment, top-evel classes, 
+                    instance variables, and writing methods. 
+                </li>
+                <li>
+                    <span class="bold">Tic-Tac-Toe:</span> Implemented a game of Tic-Tac-Toe by constucting a Tic-Tac-Toe board, controlling when players switch turns,
+                    and displaying updates. Applied concets of association, accessor and mutator mehtods, writing classes
+                    from scratch, and implementing interfaces. 
+                </li>
+                <li>
+                    <span class="bold">Fruit Ninja:</span> Applied concepts of polymorphism, inheritance, if-statements, and switch statements to model the game Fruit 
+                    Ninja. 
+                </li>
+                <li>
+                    <span class="bold">Cartoon:</span> A creative project to code an animation using graphical user interfaces, graphical containment, layout management, 
+                    complex association, sharing refereences, events, event-handling, JavaFX, and lamda expressions. 
+                </li>
+                <li>
+                    <span class="bold">Doodle Jump:</span> A partner project that implemented a game of Doodle Jump to cover topics of loops, arraylists, graphical and logical representation
+                    of programs.
+                </li>
+                <li>
+                    <span class="bold">Tetris:</span> Applied concepts of nested loops, arrays, and writing algorithms to implement a simple game of Tetris.  
+                </li>
+                <li>
+                    <span class="bold">Pacman:</span> A final project that implemented a game board, had three different game modes, kept 
+                    track of scores and lives, and used a BFS algorithm to ensure proper gameplay. 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-btns">
+        <a href="https://www.linkedin.com/in/stephanie-lin-1ab279314/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/sstephlin" target="_blank"><i class='bx bxl-github' ></i></a>
+        <a href="mailto:sstephlin112@gmail.com"><i class='bx bx-envelope'></i></a>
+    </section>
+    <section style="height: 100vh;">
+        projects
+    </section>
+</body>
