@@ -49,7 +49,8 @@
             height: 25px;
             background-color: #5e6c5b;
             border-radius: 25px;
-            border-width: 1px solid #5e6c5b;
+            border-width: 1px;
+            border-color: #5e6c5b;
             color: #edeae4;
             text-align: center;
         }
@@ -64,9 +65,9 @@
             <div class="nav-items">
                 <a href="index.html">Home</a>
                 <a href="index.html">About</a>
-                <a href="index.html">Contact</a>
+                <!-- <a href="index.html">Contact</a> -->
                 <a href="coursework.html"  class="active">Coursework</a>
-                <a href="projects.html">Projects</a>
+                <!-- <a href="projects.html">Projects</a> -->
             </div>
         </nav>
         <!-- <div class="nav-screen">
@@ -90,9 +91,11 @@
         <div>
             <table>
                 <thead>
-                    <th>Year</th>
-                    <th>Fall Semester</th>
-                    <th>Spring Semester</th>
+                    <tr>
+                        <th>Year</th>
+                        <th>Fall Semester</th>
+                        <th>Spring Semester</th>
+                    </tr>
                 </thead>
                 <tr>
                     <th style="width: 10%;">2023-2024</th>
@@ -143,19 +146,19 @@
             <ul>
                 <li>
                     <span class="bold">HW1: an introduction to functional progamming: </span>
+                    <ul>
+                        <li>
+                            <span class="bold">HW1A:</span> Understanding the basics of writing tests, working with records, and using maps and filters in Java. 
+                        </li>
+                        <li>
+                            <span class="bold">HW1B:</span> Learning recursive functions, annotating worst-case runtime, and implementing sorting algorithms.
+                        </li>
+                        <li>
+                            <span class="bold">HW1C:</span> practice with tree-like data structures, conversion of lists to tree-like data structures, runtime annotation, 
+                            and reasoning of design with tree-like data structures.
+                        </li>
+                    </ul>
                 </li>
-                <ul>
-                    <li>
-                        <span class="bold">HW1A:</span> Understanding the basics of writing tests, working with records, and using maps and filters in Java. 
-                    </li>
-                    <li>
-                        <span class="bold">HW1B:</span> Learning recursive functions, annotating worst-case runtime, and implementing sorting algorithms.
-                    </li>
-                    <li>
-                        <span class="bold">HW1C:</span> practice with tree-like data structures, conversion of lists to tree-like data structures, runtime annotation, 
-                        and reasoning of design with tree-like data structures.
-                    </li>
-                </ul>
                 <li>
                     <span class="bold">HW2 Understanding and Implementing Linked-Lists:</span> practiced implementing mutable lists, understood how lists
                     work in memory, analyzed runtime practiced testing interacting mehtods, and added private fields to increase 
@@ -241,12 +244,9 @@
             </ul>
         </div>
     </section>
-    <section class="contact-btns">
+    <div class="contact-btns">
         <a href="https://www.linkedin.com/in/stephanie-lin-1ab279314/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         <a href="https://github.com/sstephlin" target="_blank"><i class='bx bxl-github' ></i></a>
         <a href="mailto:sstephlin112@gmail.com"><i class='bx bx-envelope'></i></a>
-    </section>
-    <section style="height: 100vh;">
-        projects
-    </section>
+    </div>
 </body>
