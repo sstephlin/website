@@ -19,7 +19,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #edeae4;
+    background-color: #f2e7dd;
 }
 
 /* header */
@@ -41,9 +41,14 @@ body {
 .logo{
     font-size: 25px;
     font-style: italic;
-    color: #edeae4;
+    color: #f2e7dd;
     font-weight: 600;
+    text-decoration: none;
 }
+.logo:visited {
+    color: #f2e7dd; /* Ensures the color remains consistent after clicking */
+}
+
 .nav {
     background-color: #153147;
 }
@@ -84,9 +89,10 @@ body {
 }
 .home-content{
     margin: auto;
-    background-color: #edeae4;
+    background-color: #f2e7dd;
     width: 50%;
     text-align: center;
+    border-radius: 50px;
 }
 .home-content h1 {
     font-size: 5.5rem;
@@ -97,7 +103,7 @@ body {
     grid-template-columns: 1fr 1fr;
     height:80vh;
     align-items:center;
-    color:#f4efe6;
+    color:#f2e7dd;
     padding-left: 10%;
     display: grid;
 
@@ -138,7 +144,7 @@ body {
 }
 .contact-btns a:hover{
     background-color: #153147;
-    color: #f4efe6;
+    color: #f2e7dd;
 }
 .contact-btns a{
     display: inline-flex;
@@ -146,8 +152,8 @@ body {
     align-items: center;
     width:40px;
     height:40px;
-    background-color: #f4efe6;
-    border: 2px solid #f4efe6;
+    background-color: #f2e7dd;
+    border: 2px solid #f2e7dd;
     border-radius: 50%;
     font-size: 30px;
     color:#153147;
@@ -166,7 +172,7 @@ body {
     display: grid;
 }
 .contact-content{
-    color:#edeae4;
+    color:#f2e7dd;
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
@@ -185,7 +191,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #edeae4;
+    color: #f2e7dd;
 }
 .form-group input, .form-group textarea {
     width: 100%;
@@ -211,7 +217,7 @@ body {
 
 }
 .form-group button:hover {
-    background-color: #edeae4;
+    background-color: #f2e7dd;
     color: #153147;
 }
 .form-error {
@@ -264,11 +270,11 @@ body {
 .bold{
     font-weight: bold;
 }
-#cs15, #cs200{
+#cs15, #cs200, #cs33{
     padding:40px;
     background-color: #5e6c5b;
     width: auto;
     height: auto;
     border-radius: 25px;
-    color: #edeae4;
+    color: #f2e7dd;
 }

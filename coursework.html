@@ -26,6 +26,8 @@
             border: 1px solid #232a2f;
             padding: 20px;
             align-items: start;
+            justify-content: center;
+
         }
         a{
             text-align: center;
@@ -92,7 +94,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Year</th>
+                        <th></th>
                         <th>Fall Semester</th>
                         <th>Spring Semester</th>
                     </tr>
@@ -118,12 +120,20 @@
                         </ul>
                     </td>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <th>2024-2025</th>
-                    <td> </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Intro to Object Oriented Programming:<a href="#cs33">curriculum overview</a>
+                            </li>
+                            <li>Multivariable Calculus</li>
+                            <li>Digital & Cross-Disciplinary Language Arts</li>
+                        </ul>
+                    </td>
                     <td> </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th>2025-2026</th>
                     <td> </td>
                     <td> </td>
@@ -138,6 +148,48 @@
     </section>
     <hr style="height: 5px; color: #232a2f;background-color: #232a2f; border: none;">
     <section class="course-overview">
+        <div id="cs33">
+            <h1>Introduction to Computer Systems</h1>
+            <h3>
+                Completed Projects:
+            </h3>
+            <ul>
+                <li>
+                    <span class="bold">Maze: </span> a C programming assignment that generated mazes of any size by utilizing the 
+                    drunken-walk algorithm and solved mazes of any size using a depth-first search algorithm. This project prioritized
+                     an understanding of structing C programs, algorithms, and concepts of pointers, structs, and bitwise operations. 
+                </li>
+                <li>
+                    <span class="bold">Traps: </span> utilized GDB to step through x86-64 assembly code in order to retrieve four hidden
+                    passwords needed to disarm terminally controlled traps. 
+                </li>
+                <li>
+                    <span class="bold">Buffer: </span> crafted exploit strings to create buffer overflow attacks to exploit a program, resulting in intended behaviors. 
+                    Stepped through x86-64 assembly code to visualize the stack and registers of a given program. Additionalluy wrote machine code 
+                    to exploit the program. 
+                </li>
+                <li>
+                    <span class="bold">Shell 1: </span> the first part of a program that models the behavior of a partial-functioning C shell. 
+                    Handled reading and parsing of command lines, built-in commands, and input/output redirections. 
+
+                </li>
+                <li>
+                    <span class="bold">Shell 2: </span> the second part of a program that models the behavior of a partial-functioning C shell.
+                    Handled multiple jobs (foreground and background processes) and signal handling, masking, and updating. 
+                </li>
+                <li>
+                    <span class="bold">Malloc: </span> created a first fit dynamic storage allocator. Implemented malloc(), coalesce(), and realloc() 
+                    from scratch by managing a doubly-linked free-list and resizing the heap. 
+                </li>
+                <li>
+                    <span class="bold">Database: </span> created a thread-safe server to manage a database (structured as a binary tree), handling concurrent clients
+                    who can add, delete, and query entries. Thread safely connected clients to a server, munipulated the database, and 
+                    handled sendign signals, cancellation requests, and reaching end of file.  
+                </li>
+            </ul>
+        </div>
+
+        <br>
         <div id="cs200">
             <h1>Data Structures and Algorithms: Course Overview</h1>
             <h3>
