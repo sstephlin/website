@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b0075e3ad6.js" crossorigin="anonymous"></script>
+
 
     <title>Coursework - Stephanie Lin</title>
     <style>
@@ -62,14 +64,18 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo"> SJL</div>
+        <a class="logo" href="index.html"> SJL</div>
         <nav>
             <div class="nav-items">
                 <a href="index.html">Home</a>
                 <a href="index.html">About</a>
-                <!-- <a href="index.html">Contact</a> -->
-                <a href="coursework.html"  class="active">Coursework</a>
-                <!-- <a href="projects.html">Projects</a> -->
+                <a href="coursework.html" >Coursework</a>
+                <input type="checkbox" id="theme-toggle" class="checkbox"> 
+                <label for="theme-toggle" class="toggle-label" id="toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" ></i>
+                    <div class="ball"></div>
+                </label>                
             </div>
         </nav>
         <!-- <div class="nav-screen">
@@ -85,8 +91,59 @@
             </div>
         </div> -->
     </header>
-    <section id="courses">
-        <!-- <h1>Courses</h1> -->
+
+    <div id="courses" >
+        <div class="courses-headers">
+            <h6 id="timeline-title">TIMELINE</h6>
+            <h1 id="courses-title">COURSES I HAVE TAKEN</h1>
+        </div>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                  <h2>Fall 2023</h2>
+                  <ul>
+                    <li>Intro to Object Oriented Programming:
+                        <a href="#cs15"  >curriculum overview</a>
+                    </li>
+                    <li>Single Variable Calculus</li>
+                    <li>Intro to Sociology</li>
+                    <li>Principles of Economics</li>
+                </ul>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h2>Spring 2024</h2>
+                  <ul>
+                    <li>Program Design with Data Structures and Algorithms:
+                        <a href="#cs200">curriculum overview</a>
+                    </li>
+                    <li>Introduction to Discrete Structures and Probability</li>
+                    <li>Linear Algebra</li>
+                    <li>Cognitive Neuroscience</li>
+                </ul>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>Fall 2024</h2>
+                    <ul>
+                        <li>
+                            Intro to Object Oriented Programming:
+                            <a href="#cs33">curriculum overview</a>
+                        </li>
+                        <li>Multivariable Calculus</li>
+                        <li>Digital & Cross-Disciplinary Language Arts</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <section id="courses">
+        <h1>Courses</h1>
         <div id="courses-content">
             <h1>Courses taken</h1>
         </div>
@@ -133,7 +190,7 @@
                     </td>
                     <td> </td>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <th>2025-2026</th>
                     <td> </td>
                     <td> </td>
@@ -142,14 +199,14 @@
                     <th>2026-2027</th>
                     <td> </td>
                     <td> </td>
-                </tr> -->
+                </tr>
             </table>
         </div>
-    </section>
+    </section> -->
     <hr style="height: 5px; color: #232a2f;background-color: #232a2f; border: none;">
     <section class="course-overview">
         <div id="cs33">
-            <h1>Introduction to Computer Systems</h1>
+            <h1>Introduction to Computer Systems: Course Overview</h1>
             <h3>
                 Completed Projects:
             </h3>
@@ -183,8 +240,8 @@
                 </li>
                 <li>
                     <span class="bold">Database: </span> created a thread-safe server to manage a database (structured as a binary tree), handling concurrent clients
-                    who can add, delete, and query entries. Thread safely connected clients to a server, munipulated the database, and 
-                    handled sendign signals, cancellation requests, and reaching end of file.  
+                    who can add, delete, and query entries. Thread safely connected clients to a server, manipulated the database, and 
+                    handled sending signals, cancellation requests, and reaching end of file.  
                 </li>
             </ul>
         </div>
@@ -301,4 +358,5 @@
         <a href="https://github.com/sstephlin" target="_blank"><i class='bx bxl-github' ></i></a>
         <a href="mailto:sstephlin112@gmail.com"><i class='bx bx-envelope'></i></a>
     </div>
+    <script src="scripts.js"></script>
 </body>

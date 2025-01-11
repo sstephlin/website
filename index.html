@@ -7,10 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <script src="https://kit.fontawesome.com/b0075e3ad6.js" crossorigin="anonymous"></script>
+
 
     <title>Home - Stephanie Lin</title>
     <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
     <header class="header">
@@ -23,10 +26,15 @@
                 <a href="#about">About</a>
                 <!-- <a href="#contact">Contact</a> -->
                 <a href="coursework.html">Coursework</a>
-                <!-- <a href="projects.html">Projects</a> -->
+                <input type="checkbox" id="theme-toggle" class="checkbox"> 
+                <label for="theme-toggle" class="toggle-label" id="toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" ></i>
+                    <div class="ball"></div>
+                </label>
             </div>
         </nav>
-        <div class="nav-screen">
+        <!-- <div class="nav-screen">
             <i class="fa fa-times fa-3x"></i>
             <div class="nav-items">
               <div class="nav-links">
@@ -37,8 +45,11 @@
                 </ul>
               </div>
             </div>
-        </div>
+        </div> -->
     </header>
+
+    
+
     <section class="home">
         <div class="home-content">
             <p style="text-align: center;">Hello! I am</p>
@@ -51,13 +62,13 @@
     </section>
     <section id="about">
         <div class="about-content">
-            <h1>About Me!</h1>
-            <p> Originally from the Boston area, I currently attend school in Rhode Island at Brown University as a second 
+            <h1 style="font-size: 3.5rem;">About Me!</h1>
+            <p style="font-size: 1rem;"> Originally from the Boston area, I currently attend school in Rhode Island at Brown University as a second 
                 year student pursuing a Bachelor of Science in Computer Science. Outside of 
             classes, I enjoy dancing contemporary and jazz styles with my dance company as well as trying desserts with friends. </p>
         </div>
-        <div class="portrait">
-            <img src="https://i.postimg.cc/nVdzKR7f/IMG-7232-4.jpg" alt="Portrait of Stephanie" style="width:60%; height:60%">
+        <div class="portrait" style="padding-left: 15%;">
+            <img src="https://i.postimg.cc/nVdzKR7f/IMG-7232-4.jpg" alt="Portrait of Stephanie">
         </div>
     </section>
     <!-- <section id="contact">
